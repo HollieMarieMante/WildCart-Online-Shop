@@ -1,0 +1,104 @@
+body {
+  background-image: url("https://scontent-mnl1-1.xx.fbcdn.net/v/t1.15752-9/461718067_1089574522605251_7745214535175557562_n.png?stp=dst-png_s2048x2048&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFbnqW9NvDyGxl0_oUQ_oNpcrGymG3H0-pysbKYbcfT6vHfWDT4qYu2FuCK-tvH7_VFNPebzpSj5zHjYsxhECK-&_nc_ohc=yc3YRwlSQ4MQ7kNvgGqIQFh&_nc_ht=scontent-mnl1-1.xx&_nc_gid=AIYE_EBfhsHle0ogNzLhleQ&oh=03_Q7cD1QGQ3R4fhC9QFcXa1zOcYFkk99PhrEC1UtIPLGMEatR9tw&oe=6728235B");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#container {
+  width: 840px;
+  margin: 25px auto;
+  margin-top: 50px;
+}
+
+.navbar-maroon {
+  background-color: #800000; /* Maroon background for the navbar */
+}
+
+.navbar-maroon .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1); /* White background with 10% opacity */
+  border-radius: 1rem; /* Rounded corners for the card */
+  backdrop-filter: blur(10px); /* Blur effect behind the card */
+  padding: 20px; /* Padding for the card */
+}
+
+.btn-custom {
+  background-color: white; /* Light background */
+  border: 1px solid black; /* Black outline */
+  color: black; /* Black text */
+  width: 80%; /* Button width */
+}
+
+.btn-custom:hover {
+  background-color: black; /* Change background on hover */
+  color: white; /* Change text color on hover */
+}
+
+[type=text],
+[type=email],
+[type=number],
+[type=password],
+select,
+option {
+  display: block; /* Block display */
+  margin: 0 auto; /* Centering */
+  width: 80%; /* Width for inputs */
+  border: 0; /* No border */
+  border-bottom: 1px solid rgba(0, 0, 0, .2); /* Underline border */
+  height: 45px; /* Input height */
+  line-height: 45px; /* Line height */
+  margin-bottom: 10px; /* Bottom margin */
+  font-size: 1em; /* Font size */
+  color: black; /* Text color */
+}
+
+[type=submit] {
+  margin-top: 25px; /* Top margin */
+  width: 80%; /* Button width */
+  border: 0; /* No border */
+  background-color: #0080FF; /* Button background color */
+  border-radius: 5px; /* Rounded corners */
+  height: 50px; /* Button height */
+  color: white; /* Text color */
+  font-weight: 400; /* Font weight */
+  font-size: 1em; /* Font size */
+}
+
+[type='text']:focus {
+  outline: none; /* No outline on focus */
+  border-color: #53CACE; /* Border color on focus */
+}
+
+h2 {
+  color: red; /* Heading color */
+  font-weight: 900; /* Font weight */
+  font-size: 2.5em; /* Font size */
+}
+
+p {
+  color: rgba(0, 0, 0, .6); /* Text color */
+  font-size: 1.2em; /* Font size */
+  margin: 50px 0; /* Margin */
+}
+
+span {
+  font-size: .75em; /* Font size */
+  background-color: white; /* Background color */
+  padding: 2px 5px; /* Padding */
+  color: rgba(0, 0, 0, .6); /* Text color */
+  border-radius: 2px; /* Rounded corners */
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3); /* Shadow effect */
+  margin: 5px; /* Margin */
+}
+
+span:hover {
+  color: #53CACE; /* Change color on hover */
+}
+
+p:nth-of-type(2) {
+  font-size: 1em; /* Font size for the second paragraph */
+}
