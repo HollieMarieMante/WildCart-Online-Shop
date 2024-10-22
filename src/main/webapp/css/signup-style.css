@@ -22,8 +22,12 @@ body {
 .card {
   background: rgba(255, 255, 255, 0.1); /* White background with 10% opacity */
   border-radius: 1rem; /* Rounded corners for the card */
-  backdrop-filter: blur(10px); /* Blur effect behind the card */
-  padding: 20px; /* Padding for the card */
+  backdrop-filter: blur(5px); /* Blur effect behind the card */
+  padding: 30px; /* Increased padding for more spacing inside the card */
+  width: 100%; /* Width of the card */
+  max-width: 450px; /* Maximum width for larger screens */
+  height: auto; /* Auto height to fit content */
+  margin: 0 auto; /* Center the card horizontally */
 }
 
 .btn-custom {
