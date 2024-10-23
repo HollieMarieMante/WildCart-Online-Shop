@@ -6,29 +6,17 @@
     String name = request.getParameter("name");
     String email = request.getParameter("email");
     String mobileNumber = request.getParameter("mobileNumber");
-    String securityQuestion = request.getParameter("securityQuestion");
-    String answer = request.getParameter("answer");
     String password = request.getParameter("password");
-    String address = "";
-    String city = "";
-    String state = "";
-    String country = "";
 
     try {
         // Get connection from ConnectionProvider
         Connection con = ConnectionProvider.getCon();
         // Prepare the SQL statement
-        PreparedStatement ps = con.prepareStatement("INSERT INTO users VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        PreparedStatement ps = con.prepareStatement("INSERT INTO users VALUES (?, ?, ?, ?)");
         ps.setString(1, name);
         ps.setString(2, email);
         ps.setString(3, mobileNumber);
-        ps.setString(4, securityQuestion);
-        ps.setString(5, answer);
-        ps.setString(6, password);
-        ps.setString(7, address);
-        ps.setString(8, city);
-        ps.setString(9, state);
-        ps.setString(10, country);
+        ps.setString(4, password);
         // Execute the statement
         ps.executeUpdate();
         // Redirect to signup.jsp with a success message
