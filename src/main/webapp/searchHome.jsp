@@ -1,3 +1,7 @@
+<%@ page import="project.ConnectionProvider" %>
+<%@ page import="java.sql.*" %>
+<%@ include file="header.jsp" %>
+<%@ include file="footer.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -17,15 +21,34 @@
           </tr>
         </thead>
         <tbody>
-
+<%
+int z=0;
+try
+{
+	String search=request.getParameter("search");
+	Connection con=ConnectionProvider.getCon();
+	Statement st=con.createStatement();
+	ResultSet rs=st.executeQuery("select *from product where name like '%"+search+"%' or  category like '%"+search+"%' and active='Yes'");
+	
+	while(rs.next())
+	{
+		z=1;
+%>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><i class="fa fa-inr"></i> </i></td>
-            <td><a href="">Add to cart <i class='fas fa-cart-plus'></i></a></td>
+            <td><%=rs.getString(1) %></td>
+            <td><%=rs.getString(2) %></td>
+            <td><%=rs.getString(3) %></td>
+            <td><i class="fa fa-inr"></i><%=rs.getString(4) %> </i></td>
+            <td><a href="addToCartAction.jsp?id=<%=rs.getString(1) %>">Add to cart <i class='fas fa-cart-plus'></i></a></td>
           </tr>
-         
+<%
+	}
+}
+catch(Exception e)
+{
+	System.out.println(e);
+}
+%>
         </tbody>
       </table>
       	
@@ -35,7 +58,7 @@
       <br>
       <br>
       <div class="footer">
-          <p>All right reserved by BTech Days</p>
+          <p>All right reserved by WildCart</p>
       </div>
 
 </body>
