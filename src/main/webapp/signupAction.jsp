@@ -6,7 +6,7 @@
     String name = request.getParameter("name");
     String email = request.getParameter("email");
     String mobileNumber = request.getParameter("mobileNumber");
-    String password = request.getParameter("password");
+    String password = request.getParameter("newPassword");
 
     try {
         // Get connection from ConnectionProvider

@@ -87,6 +87,7 @@ input::-webkit-inner-spin-button {
   }
   
   [type=text],
+  [type=name],
   [type=email],
   [type=number],
   [type=password],
@@ -112,7 +113,7 @@ input::-webkit-inner-spin-button {
     margin-top: 25px; /* Top margin */
     display: flex;
     border: 0; /* No border */
-    background-color: #0080FF; /* Button background color */
+    background-color: black; /* Button background color */
     border-radius: 5px; /* Rounded corners */
     height: 40px; /* Button height */
     color: white; /* Text color */

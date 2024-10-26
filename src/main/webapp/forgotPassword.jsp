@@ -13,7 +13,7 @@
      <form class= 'form' name="forgotpasswordForm"action="forgotPasswordAction.jsp" method="post" onsubmit="return validateForm()">
           <input type="email" name="email" placeholder="Enter Email" required>
           <input type="number" name="mobileNumber" placeholder="Enter Mobile Number" required>
-          <input type="password" name="newPassword" placeholder="Enter you new password" required>
+          <input type="password" name="newPassword" placeholder="Enter new password" required>
 		  <input type="submit" value="Save">  
      </form>
       <h2><a href="login.jsp">Login</a></h2>
