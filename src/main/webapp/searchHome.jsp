@@ -2,6 +2,8 @@
 <%@ page import="java.sql.*" %>
 <%@ include file="header.jsp" %>
 <%@ include file="footer.jsp" %>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -16,7 +18,7 @@
             <th scope="col">ID</th>
             <th scope="col">Name</th>
             <th scope="col">Category</th>
-            <th scope="col"><i class="fa fa-inr"></i> Price</th>
+            <th scope="col"><i class="peso-symbol">₱</i> Price</th>
             <th scope="col">Add to cart <i class='fas fa-cart-plus'></i></th>
           </tr>
         </thead>
@@ -38,7 +40,7 @@ try
             <td><%=rs.getString(1) %></td>
             <td><%=rs.getString(2) %></td>
             <td><%=rs.getString(3) %></td>
-            <td><i class="fa fa-inr"></i><%=rs.getString(4) %> </i></td>
+            <td><i class="peso-symbol">₱ </i><%=rs.getString(4) %> </i></td>
             <td><a href="addToCartAction.jsp?id=<%=rs.getString(1) %>">Add to cart <i class='fas fa-cart-plus'></i></a></td>
           </tr>
 <%
@@ -51,9 +53,9 @@ catch(Exception e)
 %>
         </tbody>
       </table>
-      	
+      	<%if(z==0){ %>
 	<h1 style="color:white; text-align: center;">Nothing to show</h1>
-	
+	<%} %>
       <br>
       <br>
       <br>
