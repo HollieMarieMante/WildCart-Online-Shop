@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F&R CYCLE INC. - Baskets / Mesh Baskets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #DAD4B4;
+        }
+        .navbar, footer {
+            background-color: #800000;
+        }
+        .sub-header {
+            background-color: #992B1C;
+            color: #fff;
+        }
+        .btn-custom, .nav-link.active {
+            background-color: #F2E8C5 !important;
+            color: #800000 !important;
+        }
+        .btn-custom:hover, .nav-link:hover {
+            background-color: #e6d9b0 !important;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            margin-bottom: 1rem;
+        }
+        .filter-section {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            padding: 1rem;
+        }
+        .pagination .page-item.active .page-link {
+            background-color: #ff9999;
+            border-color: #ff9999;
+        }
+        .pagination .page-link {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/f%26r-logo-Ld9Rl5Uy5Ue6Vy5Uy5Ue6Vy5Ue6V.png" alt="F&R CYCLE INC. Logo" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <form class="d-flex mx-auto my-2 my-lg-0 flex-grow-1 flex-lg-grow-0">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">PRODUCTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">TOOL BOX</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">MY ACCOUNT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">LOG OUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sub-header py-2">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-2 align-items-center">
+          <div
+            class="col d-flex justify-content-center justify-content-md-start"
+          >
+            <button class="btn btn-sm btn-outline-light me-2">
+              HIDE PRICE
+            </button>
+            <button class="btn btn-sm btn-outline-light">RECENT</button>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <span class="text-nowrap">SHIP TO: FELIX'S BICYLE SHOP</span>
+          </div>
+          <div class="col d-flex justify-content-center justify-content-md-end">
+            <button class="btn btn-custom">MY CART (0)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" class="text-danger">Baskets</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Mesh Baskets</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="filter-section mb-4">
+                    <h5>FILTER BY</h5>
+                    <hr>
+                    <p><a href="#" class="text-danger"><small>clear all</small></a></p>
+                    <h6>Sub Category</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="viewAllBaskets">
+                        <label class="form-check-label" for="viewAllBaskets">View All Baskets</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="basketParts">
+                        <label class="form-check-label" for="basketParts">Basket Parts</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="meshBaskets" checked>
+                        <label class="form-check-label" for="meshBaskets">Mesh Baskets</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="syntheticWeaveBaskets">
+                        <label class="form-check-label" for="syntheticWeaveBaskets">Synthetic Weave Baskets</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="trikeBaskets">
+                        <label class="form-check-label" for="trikeBaskets">Trike Baskets</label>
+                    </div>
+                    <h6 class="mt-3">Size</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="size10cm">
+                        <label class="form-check-label" for="size10cm">10 cm</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="size20cm">
+                        <label class="form-check-label" for="size20cm">20 cm</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="size30cm">
+                        <label class="form-check-label" for="size30cm">30 cm</label>
+                    </div>
+                    <h6 class="mt-3">Color</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="colorWhite">
+                        <label class="form-check-label" for="colorWhite">White</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="colorBlack">
+                        <label class="form-check-label" for="colorBlack">Black</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="colorGrey">
+                        <label class="form-check-label" for="colorGrey">Grey</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                        <label for="sortBy" class="me-2">Sort by:</label>
+                        <select id="sortBy" class="form-select form-select-sm d-inline-block w-auto">
+                            <option>Relevance</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="btn btn-sm btn-outline-secondary me-2"><i class="fas fa-th-large"></i></button>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+
+                <div class="product-card p-3">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mesh-baskets-Ld9Rl5Uy5Ue6Vy5Uy5Ue6Vy5Ue6V.jpg" alt="SQUARE STEEL FRONT MESH BASKET" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-danger">REF#: 107514</h6>
+                            <h5>SQUARE STEEL FRONT MESH BASKET 333 BLACK.</h5>
+                            <ul class="list-unstyled">
+                                <li>Size: 15 x 10 x 9.25</li>
+                                <li>Material: Steel Wire</li>
+                                <li>Mount: Lift-Off</li>
+                                <li>Color: Black</li>
+                            </ul>
+                            <a href="#" class="text-danger">Hide Info <i class="fas fa-chevron-up"></i></a>
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <h5 class="text-danger">Price : $ 10.95 ea</h5>
+                            <button class="btn btn-custom mt-2">ADD TO CART</button>
+                            <p class="mt-2">Min Purchase Qty: 1</p>
+                            <p class="text-success"><i class="fas fa-check"></i> In stock</p>
+                            <a href="#" class="text-danger">Add to Favorites</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card p-3 mt-3">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/wire-baskets-Ld9Rl5Uy5Ue6Vy5Uy5Ue6Vy5Ue6V.jpg" alt="OVAL STEEL FRONT MESH BASKET" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-danger">REF#: 107544</h6>
+                            <h5>OVAL STEEL FRONT MESH BASKET 21-H BLACK.</h5>
+                            <ul class="list-unstyled">
+                                <li>Size: 14.5 X 10.25 X 9.75</li>
+                                <li>Material: Steel Mesh</li>
+                                <li>Mount: Lift-Off</li>
+                                <li>Color: Black</li>
+                            </ul>
+                            <a href="#" class="text-danger">More Info <i class="fas fa-chevron-down"></i></a>
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <h5 class="text-danger">Price : $ 10.95 ea</h5>
+                            <button class="btn btn-custom mt-2">ADD TO CART</button>
+                            <p class="mt-2">Min Purchase Qty: 1</p>
+                            <p class="text-success"><i class="fas fa-check"></i> In stock</p>
+                            <a href="#" class="text-danger">Add to Favorites</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card p-3 mt-3">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/wire-baskets-2-Ld9Rl5Uy5Ue6Vy5Uy5Ue6Vy5Ue6V.jpg" alt="OVAL STEEL FRONT MESH BASKET" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-danger">REF#: 107550</h6>
+                            <h5>OVAL STEEL FRONT MESH BASKET 21-H WHITE.</h5>
+                            <ul class="list-unstyled">
+                                <li>Size: 14.5 X 10.25 X 9.75</li>
+                                <li>Material: Steel Mesh</li>
+                                <li>Mount: Lift-Off</li>
+                                <li>Color: White</li>
+                            </ul>
+                            <a href="#" class="text-danger">More Info <i class="fas fa-chevron-down"></i></a>
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <h5 class="text-danger">Price : $ 10.95 ea</h5>
+                            <button class="btn btn-custom mt-2">ADD TO CART</button>
+                            <p class="mt-2">Min Purchase Qty: 1</p>
+                            <p class="text-success"><i class="fas fa-check"></i> In stock</p>
+                            <a href="#" class="text-danger">Add to Favorites</a>
+                        </div>
+                    </div>
+                </div>
+
+                <nav aria-label="Page navigation" class="mt-4">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><span class="page-link">...</span></li>
+                        <li class="page-item"><a class="page-link" href="#">100</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                    </ul>
+                </nav>
+
+                <div class="text-center mt-2">
+                    <span>Items Per Page</span>
+                    <select class="form-select form-select-sm d-inline-block w-auto ms-2">
+                        <option>14</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-white py-3 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/f%26r-logo-Ld9Rl5Uy5Ue6Vy5Uy5Ue6Vy5Ue6V.png" alt="F&R CYCLE INC. Logo" class="img-fluid" style="max-height: 40px;">
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <span class="me-2">FOLLOW US</span>
+                    <a href="#" class="text-white me-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <small>&copy; 2024 F&R cycle inc. All Rights Reserved.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
