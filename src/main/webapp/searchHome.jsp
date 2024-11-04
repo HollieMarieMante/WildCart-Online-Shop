@@ -18,7 +18,7 @@
             <th scope="col">ID</th>
             <th scope="col">Name</th>
             <th scope="col">Category</th>
-            <th scope="col"><i class="peso-symbol">₱</i> Price</th>
+            <th scope="col"><i class="peso-symbol"></i> Price</th>
             <th scope="col">Add to cart <i class='fas fa-cart-plus'></i></th>
           </tr>
         </thead>

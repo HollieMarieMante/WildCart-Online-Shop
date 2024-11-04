@@ -2,6 +2,8 @@
 <%@ page import="java.sql.*" %>
 <%@ include file="header.jsp" %>
 <%@ include file="footer.jsp" %>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -25,7 +27,7 @@ if("added".equals(msg))
 
 if("exist".equals(msg))
 {
-	%><h3 class="alert">Product already exist in you cart! Quantity  increased!</h3><%
+	%><h3 class="alert">Product already exist in your cart! Quantity  increased!</h3><%
 }
 
 if("invalid".equals(msg))
@@ -40,7 +42,7 @@ if("invalid".equals(msg))
             <th scope="col">ID</th>
             <th scope="col">Name</th>
             <th scope="col">Category</th>
-            <th scope="col"><i class="\u20B1"></i> Price</th>
+            <th scope="col"><i class="peso-symbol"></i> Price</th>
             <th scope="col">Add to cart <i class='fas fa-cart-plus'></i></th>
           </tr>
         </thead>
@@ -58,7 +60,7 @@ try
             <td><%=rs.getString(1) %></td>
             <td><%=rs.getString(2) %></td>
             <td><%=rs.getString(3) %></td>
-            <td><i class="fa fa-inr"></i><%=rs.getString(4) %> </i></td>
+            <td><i class="peso-symbol">₱ </i><%=rs.getString(4) %> </i></td>
             <td><a href="addToCartAction.jsp?id=<%=rs.getString(1) %>">Add to cart <i class='fas fa-cart-plus'></i></a></td>
           </tr>
 <%
