@@ -1,4 +1,6 @@
-
+<%@ page import="project.ConnectionProvider" %>
+<%@ page import="java.sql.*" %>
+<%@include file=footer.jsp %>
 <html>
 <head>
 <link rel="stylesheet" href="css/bill.css">
@@ -6,7 +8,7 @@
 </head>
 <body>
 
-<h3>Online shopping Bill (BTech Days)</h3>
+<h3>WildCart</h3>
 <hr>
 <div class="left-div"><h3>Name:  </h3></div>
 <div class="right-div-right"><h3>Email:  </h3></div>

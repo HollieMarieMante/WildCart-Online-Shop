@@ -27,7 +27,7 @@ if("added".equals(msg))
 
 if("exist".equals(msg))
 {
-	%><h3 class="alert">Product already exist in your cart! Quantity  increased!</h3><%
+	%><h3 class="alert">Product already exist in yourx cart! Quantity  increased!</h3><%
 }
 
 if("invalid".equals(msg))
