@@ -44,7 +44,7 @@
       
 <hr style="width: 100%">
 
- <div class="left-div">
+ <!--<div class="left-div">
  <h3>Enter Address</h3>
 
  </div>
@@ -65,14 +65,14 @@
 </div>
 <h3 style="color: red">*If there is no address its mean that you did not set you address!</h3>
 <h3 style="color: red">*This address will also updated to your profile</h3>
-<hr style="width: 100%">
+<hr style="width: 100%">--->
 <div class="left-div">
 <h3>Select way of Payment</h3>
  
 </div>
 
 <div class="right-div">
-<h3>Pay online on this btechdays@pay.com</h3>
+<h3>Pay online</h3>
 
 <h3 style="color: red">*If you select online Payment then enter you transaction ID here otherwise leave this blank</h3>
 </div>
@@ -84,7 +84,7 @@
 <h3 style="color: red">*This mobile number will also updated to your profile</h3>
 </div>
 <div class="right-div">
-<h3 style="color: red">*If you enter wrong transaction id then your order will we can cancel!</h3>
+<h3 style="color: red">*If you enter wrong transaction id then your order will be cancelled!</h3>
 <i class='far fa-arrow-alt-circle-right'></i>
 <h3 style="color: red">*Fill form correctly</h3>
 </div>

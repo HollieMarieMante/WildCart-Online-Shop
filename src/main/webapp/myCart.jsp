@@ -18,7 +18,7 @@ h3
 </head>
 <body>
 <div style="color: white; text-align: center; font-size: 30px;">My Cart <i class='fas fa-cart-arrow-down'></i></div>
-<%
+<!-- <%
 String msg=request.getParameter("msg");
 if("notPossible".equals(msg))
 {
@@ -42,7 +42,7 @@ if("removed".equals(msg))
 {
 %>
 <h3 class="alert">Product Successfully Removed!</h3>
-<%} %>
+<%} %>-->
 <table>
 <thead>
 <%
@@ -92,7 +92,7 @@ try
             <td><%=rs.getString(2)%></td>
             <td><%=rs.getString(3)%></td>
             <td><i class="peso-symbol">₱</i><%=rs.getString(4)%> </td>
-            <td><a href="incDecQuantityAction.jsp?id=<%=rs.getString(1)%>&quantity=inc"><i class='fas fa-plus-circle'></i></a><%=rs.getString(8)%>  <a href="incDecQuantityAction.jsp?id=<%=rs.getString(1)%>&quantity=dec"><i class='fas fa-minus-circle'></i></a></td>
+            <td><a href="incDecQuantityAction.jsp?id=<%=rs.getString(1)%>&quantity=dec"><i class='fas fa-plus-circle'></i></a><%=rs.getString(8)%>  <a href="incDecQuantityAction.jsp?id=<%=rs.getString(1)%>&quantity=inc"><i class='fas fa-minus-circle'></i></a></td>
             <td><i class="peso-symbol">₱</i><%=rs.getString(10)%> </td>
             <td><a href="removeFromCart.jsp?id=<%=rs.getString(1)%>">Remove <i class='fas fa-trash-alt'></i></a></td>
           </tr>
